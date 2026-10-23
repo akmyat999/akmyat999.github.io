@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aung Kaung Myat | Geospatial Analyst Portfolio</title>
+<meta name="description" content="Graduate geospatial analyst in Dublin: GIS, remote sensing and Python projects.">
+<style>
+  :root {
+    --bg: #f7f8fa; --card: #ffffff; --text: #2d3748; --muted: #5f6b7a;
+    --navy: #243b53; --teal: #2f7f84; --line: #dde2e8; --tag-bg: #e6f2f2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #11181f; --card: #18222c; --text: #dbe3ea; --muted: #9aa8b6;
+      --navy: #e6edf3; --teal: #5cb8bd; --line: #2a3744; --tag-bg: #1d3338;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+  a { color: var(--teal); }
+  a:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+
+  header { padding: 48px 0 28px; border-bottom: 3px solid var(--teal); }
+  h1 { margin: 0; font-size: 2.2rem; line-height: 1.15; color: var(--navy); letter-spacing: .01em; }
+  .headline { margin: 6px 0 0; font-weight: 700; color: var(--teal); }
+  .place { margin: 2px 0 14px; color: var(--muted); font-size: .95rem; }
+  .intro { margin: 0 0 18px; max-width: 62ch; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
+  .links a {
+    display: inline-block; padding: 7px 14px; border: 1px solid var(--teal);
+    border-radius: 999px; text-decoration: none; font-weight: 600; font-size: .92rem;
+  }
+  .links a:hover { background: var(--teal); color: #fff; }
+
+  section { padding: 32px 0 4px; }
+  h2 { margin: 0 0 14px; font-size: 1.15rem; color: var(--navy); text-transform: uppercase; letter-spacing: .08em; }
+
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 18px 20px; margin-bottom: 14px;
+  }
+  .card h3 { margin: 0 0 6px; font-size: 1.1rem; color: var(--navy); }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; padding: 0; list-style: none; }
+  .tags li { background: var(--tag-bg); color: var(--teal); font-size: .78rem; font-weight: 600; padding: 2px 9px; border-radius: 999px; }
+  .card p { margin: 0 0 10px; }
+  .thumb { display: block; width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--line); margin: 0 0 12px; }
+  .card .more { font-size: .92rem; font-weight: 600; margin: 0; }
+  .card .more a { margin-right: 16px; }
+
+  .plain { padding-left: 18px; margin: 0; }
+  .plain li { margin-bottom: 6px; }
+  .skills { display: grid; grid-template-columns: 1fr; gap: 6px; margin: 0; }
+  .skills dt { font-weight: 700; color: var(--navy); }
+  .skills dd { margin: 0 0 8px; }
+  @media (min-width: 640px) {
+    .skills { grid-template-columns: 230px 1fr; gap: 4px 16px; }
+    .skills dd { margin: 0; }
+  }
+  footer { margin: 36px 0 0; padding: 22px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+  @media (max-width: 480px) { h1 { font-size: 1.8rem; } header { padding-top: 32px; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Aung Kaung Myat</h1>
+    <p class="headline">Graduate Geospatial Analyst | GIS, Remote Sensing &amp; Python</p>
+    <p class="place">Dublin, Ireland</p>
+    <p class="intro">MSc GIS &amp; Remote Sensing (UCD, First Class Honours) and MSc Natural Hazards Mitigation &amp; Management. I use GIS, Python and spatial statistics for flood hazard, satellite mapping and urban accessibility, working with Irish datasets.</p>
+    <ul class="links">
+      <li><a href="mailto:aungkaungmyat.akm000@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/akmyat0" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/akmyat999" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://arcg.is/1SL81y3" target="_blank" rel="noopener">StoryMaps portfolio</a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="projects">
+    <h2>Selected projects</h2>
+
+    <article class="card">
+      <img class="thumb" src="images/liveability.png" alt="Dublin Liveability Index map" onerror="this.remove()">
+      <h3>Dublin Liveability Index</h3>
+      <ul class="tags"><li>Python</li><li>GeoPandas</li><li>OpenStreetMap</li><li>CSO Small Areas</li></ul>
+      <p>A four-pillar Composite Liveability Index for 5,076 Dublin Small Areas, combining public transit access (400 m), active travel network density, healthcare access (500 m) and green space. 284 areas classed as Very Low liveability, and 62 areas identified with combined transport and healthcare access gaps.</p>
+      <p class="more"><a href="https://github.com/akmyat999/dublin-liveability-index-python" target="_blank" rel="noopener">Code on GitHub</a><a href="https://arcg.is/1SL81y3" target="_blank" rel="noopener">Maps in StoryMaps</a></p>
+    </article>
+
+    <article class="card">
+      <img class="thumb" src="images/ucd-transit.png" alt="UCD walking access maps" onerror="this.remove()">
+      <h3>UCD Transit Accessibility</h3>
+      <ul class="tags"><li>ArcGIS Network Analyst</li><li>Service areas</li><li>Closest facility</li></ul>
+      <p>Compared a 5-minute circular buffer with a network-based walking service area to the main UCD bus stop, and used closest-facility routing for six sample student locations. The buffer overstated access, and four of six locations were within a 5-minute walk of their nearest stop.</p>
+      <p class="more"><a href="https://arcg.is/1SL81y3" target="_blank" rel="noopener">Maps in StoryMaps</a></p>
+    </article>
+
+    <article class="card">
+      <img class="thumb" src="images/flood.png" alt="Dublin flood susceptibility map" onerror="this.remove()">
+      <h3>Dublin LiDAR Flood Susceptibility Modelling</h3>
+      <ul class="tags"><li>ArcGIS Pro</li><li>2 m LiDAR</li><li>AHP</li><li>OPW CFRAM validation</li></ul>
+      <p>An AHP-based multi-criteria model on a 2 m LiDAR terrain model (28.87 million cells). It captured 98.08% of OPW historic flood outlines and 99.32% of the CFRAM 10-year flood extent.</p>
+      <p class="more"><a href="https://drive.google.com/file/d/1_UWHWClLyt6vDVng7xnkqv6d1Vx9Rn89/view?usp=sharing" target="_blank" rel="noopener">Research paper</a><a href="https://arcg.is/1SL81y3" target="_blank" rel="noopener">Maps in StoryMaps</a></p>
+    </article>
+
+    <article class="card">
+      <img class="thumb" src="images/myanmar.png" alt="Myanmar conflict hotspot map" onerror="this.remove()">
+      <h3>Myanmar Township-Level Conflict Analysis</h3>
+      <ul class="tags"><li>PySAL</li><li>Getis-Ord Gi*</li><li>Local Moran's I</li><li>KNN weights (K=8)</li></ul>
+      <p>Analysed ACLED fatalities across 330 townships (Moran's I = 0.428). Identified 22 Gi* hotspots and 6 High-High clusters, and found that the top 10% of townships account for about 85% of recorded fatalities.</p>
+      <p class="more"><a href="https://github.com/akmyat999/spatial-hotspot-analysis-pysal" target="_blank" rel="noopener">Method code on GitHub</a><a href="https://arcg.is/1SL81y3" target="_blank" rel="noopener">Maps in StoryMaps</a></p>
+    </article>
+
+    <article class="card">
+      <img class="thumb" src="images/landcover.png" alt="Dublin land-cover classification" onerror="this.remove()">
+      <h3>Dublin Land-Cover Mapping: Deep Learning vs. OBIA-SVM</h3>
+      <ul class="tags"><li>ArcGIS Pro Image Analyst</li><li>U-Net</li><li>Sentinel-2</li></ul>
+      <p>Compared a ResNet-34 U-Net (about 98% validation accuracy) with an object-based SVM classifier on Sentinel-2 imagery, and examined river continuity and shadow-related errors.</p>
+      <p class="more"><a href="https://arcg.is/1SL81y3" target="_blank" rel="noopener">Maps in StoryMaps</a></p>
+    </article>
+  </section>
+
+  <section id="more-projects">
+    <h2>Additional projects</h2>
+    <ul class="plain">
+      <li><strong>Satellite-Derived Bathymetry, Tramore Bay:</strong> Lyzenga model in Google Earth Engine; summer R² = 0.86 and RMSE = 0.79 m against INFOMAR soundings, while winter turbidity reduced accuracy (R² = 0.12).</li>
+      <li><strong>Tramore Bay Coastal Erosion:</strong> shoreline change rates with the Digital Shoreline Analysis System (DSAS).</li>
+      <li><strong>Dublin Urban Heat:</strong> land surface temperature from Landsat 8 thermal imagery.</li>
+      <li><strong>Dublin Land-Cover Change Detection:</strong> Random Forest, pixel-based classification of Landsat imagery.</li>
+      <li><strong>Irish Wader Habitat Suitability:</strong> reusable ModelBuilder workflow.</li>
+      <li><strong>Myanmar Multi-hazard Risk Analysis:</strong> faults, earthquakes and flood exposure.</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Tools</h2>
+    <dl class="skills">
+      <dt>GIS &amp; geospatial software</dt>
+      <dd>ArcGIS Pro, ArcGIS Online (Experience Builder, Dashboards, StoryMaps, Survey123), QGIS</dd>
+      <dt>Programming &amp; spatial data</dt>
+      <dd>Python (GeoPandas, Rasterio, PySAL, OSMnx, ArcPy, PyQGIS), SQL, R</dd>
+      <dt>Remote sensing &amp; machine learning</dt>
+      <dd>Google Earth Engine, ESA SNAP, deep learning (U-Net), OBIA, Random Forest</dd>
+    </dl>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="plain">
+      <li><strong>MSc Geographic Information Systems &amp; Remote Sensing</strong>, University College Dublin (2025 to 2026), First Class Honours</li>
+      <li><strong>MSc Natural Hazards Mitigation &amp; Management</strong>, National Cheng Kung University, Taiwan (2020 to 2022)</li>
+      <li><strong>BSc (Hons) Geology</strong>, University of Yangon, Myanmar</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    Aung Kaung Myat, Dublin. Datasets used include CSO, OPW, INFOMAR, Tailte Éireann, OpenStreetMap, Sentinel-2 and Landsat. Raw third-party data is not republished here.
+  </div>
+</footer>
+
+</body>
+</html>
